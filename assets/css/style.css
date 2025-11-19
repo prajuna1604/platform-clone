@@ -775,12 +775,11 @@ a {
 
 /*=============== MAIN CONTAINER ===============*/
 .main-container {
-  display: block;
+  display: flex;
   justify-content: center;
   gap: 2rem;
   padding: 2rem 4rem;
-  /* position: sticky; */
-  flex-wrap: wrap;
+  position: sticky;
   align-items: flex-start;
   /* prevents sidebar from stretching */
   gap: 2rem;
@@ -1122,7 +1121,6 @@ a {
     display: grid;
     grid-template-columns: 1.2fr 2fr;
     gap: 3rem;
-    justify-items: start;
   }
 }
 
@@ -1131,7 +1129,6 @@ a {
   width: 120px;
   height: auto;
 }
-
 
 .cs-footer__description {
   color: #555;
@@ -1170,7 +1167,7 @@ a {
 
 .cs-footer-columns__nav {
   display: flex;
-  justify-content: flex-start;
+  justify-content: flex-end;
   flex-wrap: wrap;
   gap: 2rem;
   list-style: none;
@@ -1219,8 +1216,7 @@ a {
   margin-top: 30px;
   padding-top: 20px;
   display: flex;
-  justify-content: flex-start;
-  gap:2rem;
+  justify-content: space-between;
   flex-wrap: wrap;
   align-items: center;
 }
@@ -1826,22 +1822,34 @@ form {
     padding-left: 35px;
 
   }
+
   .post-card {
     flex-direction: column;
     align-items: center;
+
   }
+
   .post-img {
     /* width: 100%; */
     height: auto;
+
   }
+
   .post-content {
     width: 100%;
   }
+
   .main-container {
     flex-direction: column;
     padding: 1.5rem;
 
   }
+
+  .card {
+    /* padding-left:20px; */
+  }
+
+  .carousel {}
 }
 
 /* 992px for laptops  */
@@ -1864,10 +1872,17 @@ form {
 
 /* --- Carousel Section --- */
 @media (max-width: 768px) {
+
+  /* .carousel-item img{
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+  } */
   .carousel-caption {
     padding: 60px 20px;
     text-align: center;
   }
+
   .carousel-caption h5 {
     font-size: 20px;
   }
@@ -1875,7 +1890,9 @@ form {
   .carousel-caption p {
     font-size: 14px;
   }
+
 }
+
 /* --- Main Container (Posts + Sidebar) --- */
 @media (max-width: 1024px) {
   .main-container {
@@ -1883,20 +1900,25 @@ form {
     padding: 1.5rem;
     padding-left: 85px;
   }
+
   .post-list {
     width: 100%;
     align-items: center;
     padding-right: 40px;
   }
+
   .author-cards-container {
     width: 100%;
     align-items: stretch;
   }
+
   .author-card {
     width: 100%;
     height: auto;
   }
 }
+
+
 
 /* --- Dropdown grid for categories/lifestyle --- */
 @media (max-width: 900px) {
@@ -1967,6 +1989,9 @@ form {
 .card-sport .card-title {
   font-size: 2rem;
 }
+/* ===================== Container ===================== */
+
+
 /* ===================== Left Section ===================== */
 .cs-entry__author-left > picture,
 .cs-entry__author-info {
@@ -1981,13 +2006,17 @@ form {
 .cs-entry__author-avatar img {
   width: 56px;
   height: 56px;
-  object-fit: cover; 
+  object-fit: cover;
+  
 }
+
+
 .cs-entry__author-info {
   display: flex;
   flex-direction: column;
   gap: 0.3rem;
 }
+
 .cs-meta-author-link {
   text-decoration: none;
   color: #333;
@@ -2001,12 +2030,16 @@ form {
  gap:1rem;
   display:inline-flex;
 }
+
+
+
 /* ===================== Social Links ===================== */
 .cs-page__author-social-links {
   display: flex;
   gap: 0.5rem;
   margin-top: 0.3rem;
 }
+
 .cs-page__author-social-links a {
   display: flex;
   background: #f5f5f5;
@@ -2015,9 +2048,12 @@ form {
   transition: all 0.3s ease;
   text-decoration: none;
 }
+
+
 .cs-page__author-social-links i {
   pointer-events: none;
 }
+
 /* ===================== Right Section ===================== */
 .cs-entry__header-meta {
   display: flex;
@@ -2270,8 +2306,4 @@ form {
 }
 
 
-.row{
-  padding-left: 8px;
-  padding-right:8px;
-  margin-bottom: 10px;
-}
+
