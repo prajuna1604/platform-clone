@@ -2583,9 +2583,11 @@ form {
     padding-left: 100px;
     height: 30px;
   }
-.darkLight-searchBox{
-padding-left: 100px;
-}
+
+  .darkLight-searchBox {
+    padding-left: 100px;
+  }
+
   .searchBox i {
     padding-left: 100%;
     /* font-size: 1rem;
@@ -2635,9 +2637,11 @@ padding-left: 100px;
     padding-left: 40px;
     height: 28px;
   }
-.darkLight-searchBox{
-padding-left:4px;
-}
+
+  .darkLight-searchBox {
+    padding-left: 4px;
+  }
+
   .searchBox i {
     display: inline-flex;
     padding-left: 200px;
