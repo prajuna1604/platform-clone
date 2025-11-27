@@ -8,18 +8,23 @@
 //   modeToggle.classList.toggle('active');
 // });
 // });
- document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener('DOMContentLoaded', () => {
   const body = document.querySelector('body');
- 
+
   const modeToggle = document.querySelector('.dark-light');
 
   if (modeToggle) {
     modeToggle.addEventListener('click', () => {
       modeToggle.classList.toggle('active');
       body.classList.toggle('dark-mode');
-      
+
     });
   }
+  const burger = document.getElementById("burgerToggle");
+  burger.addEventListener("click", () => {
+    burger.classList.toggle("active");
+  });
+
   const burgerToggle = document.getElementById("burgerToggle");
   const burgerOverlay = document.getElementById("burgerOverlay");
 
@@ -33,9 +38,9 @@
   });
   const demosMenu = document.querySelector(".demos-menu");
   const featuresMenu = document.querySelector(".features-menu");
-  
 
-const searchBox = document.querySelector(".searchBox");
+
+  const searchBox = document.querySelector(".searchBox");
   const searchContainer = document.querySelector(".cs-col-search");
   const closeBtn = document.querySelector(".cs-search-close");
 
@@ -52,6 +57,22 @@ const searchBox = document.querySelector(".searchBox");
       searchContainer.classList.remove("active");
     }
   });
+  const swiper = new Swiper('.thumb-slider', {
+  direction: 'vertical',
+  slidesPerView: 3,
+  spaceBetween: 12,
+  watchSlidesProgress: true,
+});
+
+/* Sync Swiper with Carousel */
+let carousel = document.getElementById("mainCarousel");
+carousel.addEventListener("slid.bs.carousel", function (e) {
+  swiper.slideTo(e.to);
+});
+
+swiper.on("click", function () {
+  bootstrap.Carousel.getInstance(carousel).to(swiper.clickedIndex);
+});
 
 
 });
