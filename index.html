@@ -22,7 +22,7 @@
     <section class="header-container">
       <!--=============== HEADER ===============-->
       <header class="header">
-        <nav class="nav" style="">
+        <nav class="nav">
           <div class="nav__data">
             <!-- Burger Toggle Button -->
             <!-- Burger Menu Popup -->
@@ -194,6 +194,7 @@
                     <div class="card-group ">
                       <div class="card">
                         <img src="img/lifestyle-1.webp" class="card-img-top" alt="...">
+                         <span class="post-category Lifestyle">Lifestyle</span>
                         <div class="card-body">
                           <h5 class="card-title">My Favorite Portable SSD Setup for Daily Smartphone Workflows</h5>
                           <div class="post-meta">
@@ -206,6 +207,7 @@
                       </div>
                       <div class="card">
                         <img src="img/lifestyle-2.webp" class="card-img-top" alt="...">
+                         <span class="post-category Lifestyle">Lifestyle</span>
                         <div class="card-body">
                           <h5 class="card-title">What Footwear Teaches Us About Product Design and Branding</h5>
                           <div class="post-meta">
@@ -218,6 +220,7 @@
                       </div>
                       <div class="card">
                         <img src="img/lifestyle-3.webp" class="card-img-top" alt="...">
+                         <span class="post-category Lifestyle">Lifestyle</span>
                         <div class="card-body">
                           <h5 class="card-title">Contactless Payments Are On-the-Go Worldwide</h5>
                           <div class="post-meta">
@@ -230,6 +233,7 @@
                       </div>
                       <div class="card">
                         <img src="img/lifestyle-4.webp" class="card-img-top" alt="...">
+                         <span class="post-category Lifestyle">Lifestyle</span>
                         <div class="card-body">
                           <h5 class="card-title">That Feeling of Being Airborne Is What Keeps Me Lacing Up Again</h5>
                           <div class="post-meta">
@@ -241,19 +245,18 @@
                         </div>
                       </div>
                     </div>
+                      <button type="button" class="btn btn-primary btn-sm lifestyle-btn">View All</button>
                 </li>
+               
               </ul>
             </div>
             <!-- Search area (hidden by default) -->
-            <!-- <div class="cs-header__col cs-col__search">
+             <!-- <div class="cs-header__col cs-col__search">
           <div class="cs-search__form-container">
-            <div class="cs-search__form-container">
               <form class="cs-search__form" action="#" method="get">
                 <div class="cs-form-group cs-search__form-group">
                   <input type="text" name="s" class="cs-search__input" placeholder="Search...">
-                  <i class="ri-search-line"></i>
                   <button class="cs-button cs-search__submit" aria-label="Search" type="submit"> Search </button>
-
                 </div>
               </form>
             </div>
@@ -304,13 +307,11 @@
                   </div>
                 </div>
               </div>
-
             </div>
-          </div>
-        </div> -->
+        </div>  -->
             <!-- Search Box & Dark Light & Right Button -->
             <div class="darkLight-searchBox">
-              <div class="searchBox">
+              <div class="searchBox" id="searchToggle">
                 <i class="ri-search-line"></i>
               </div>
               <div class="dark-light">
@@ -390,12 +391,10 @@
       <!-- Controls -->
       <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-       
         <span class="visually-hidden">Previous</span>
       </button>
       <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        
         <span class="visually-hidden">Next</span>
       </button>
     </div>
@@ -406,12 +405,9 @@
     <div class="post-list">
       <a href="post-link1.html">
         <article class="post-card">
-
           <img src="img/sportswear.webp" alt="Post Image" class="post-img">
           <span class="post-category business">Business</span>
           <div class="post-content">
-
-
             <h3 class="post-title">Sportswear That Tells Us a Lot About Branding</h3>
             <p class="post-desc">A small personal moment that quietly stood out to me.</p>
             <div class="post-meta">
@@ -693,8 +689,7 @@
         </div>
         <button class="btn-touch">Get In Touch →</button>
       </aside>
-      <h2 class="feature" style="color:#435366; font-size:14px; padding-left:50px;">Featured</h2>
-
+      <h2 class="feature" style="color:#435366; font-size:14px; padding-left:20px;">Featured</h2>
       <div id="carouselExampleRight" class="carousel slide-right" data-bs-ride="carousel w-100">
         <div class="carousel-inner">
           <div class="carousel-item carousel-item-right active">
@@ -746,7 +741,8 @@
                   <p>Quick takes on style, gear, and daily shifts.</p>
                 </div>
                 <div class="cs-widget-categories__item-btn">
-                  <span> Explore Category
+                  <span class="explore-category">
+                     Explore Category
                     <i class="ri-arrow-right-s-line"></i>
                     <i class="ri-arrow-right-line"></i>
                   </span>
@@ -764,7 +760,7 @@
                   <p>Small habits and ideas that shape everyday life.</p>
                 </div>
                 <div class="cs-widget-categories__item-btn">
-                  <span> Explore Category
+                  <span class="explore-category"> Explore Category
                     <i class="ri-arrow-right-s-line"></i>
                     <i class="ri-arrow-right-line"></i>
                   </span>
@@ -782,7 +778,7 @@
                   <p>Notes on work, growth, and personal direction.</p>
                 </div>
                 <div class="cs-widget-categories__item-btn">
-                  <span> Explore Category
+                  <span class="explore-category"> Explore Category
                     <i class="ri-arrow-right-s-line"></i>
                     <i class="ri-arrow-right-line"></i>
                   </span>
@@ -799,7 +795,7 @@
                   <p>Things I’m trying, testing, or thinking about…</p>
                 </div>
                 <div class="cs-widget-categories__item-btn">
-                  <span> Explore Category
+                  <span class="explore-category"> Explore Category
                     <i class="ri-arrow-right-s-line"></i>
                     <i class="ri-arrow-right-line"></i>
                   </span>
