@@ -952,6 +952,15 @@ a {
   gap: 1.5rem;
   /* order: 1; */
 }
+.post-list a {
+  display: block;
+}
+
+.post-list a.hidden {
+  display: none;
+}
+
+
 
 .post-img {
   /* width: 40%; */

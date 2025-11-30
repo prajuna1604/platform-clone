@@ -72,7 +72,32 @@ carousel.addEventListener("slid.bs.carousel", function (e) {
 swiper.on("click", function () {
   bootstrap.Carousel.getInstance(carousel).to(swiper.clickedIndex);
 });
+document.addEventListener("DOMContentLoaded", function () {
 
+  const loadMoreBtn = document.getElementById("loadMoreBtn");
+  const posts = document.querySelectorAll(".post-list a");
+  let visible = 8;
+
+  loadMoreBtn.addEventListener("click", function () {
+
+    let count = 0;
+
+    for (let i = visible; i < posts.length; i++) {
+      if (count < 4) {
+        posts[i].style.display = "block";
+        count++;
+      }
+    }
+
+    visible += 4;
+
+    // Hide button if no more posts
+    if (visible >= posts.length) {
+      loadMoreBtn.style.display = "none";
+    }
+
+  });
+});
 
 });
 
