@@ -1263,7 +1263,7 @@ a {
 
 .explore-category {
   color: rgb(67, 83, 102);
-  font-size: 16px;      
+  font-size: 14px;      
   font-weight: 600;
   display: inline-flex;
   align-items: center;
@@ -1271,19 +1271,17 @@ a {
   font-family: "Inter",sans-serif;           
 }
 
-.cs-widget-categories__item-title {
-  font-family: var(--cs-font-headings-family), sans-serif;
-  font-weight: var(--cs-font-headings-weight);
-  font-style: var(--cs-font-headings-style);
-  text-transform: var(--cs-font-headings-text-transform);
-  line-height: var(--cs-font-headings-line-height);
-  letter-spacing: var(--cs-font-headings-letter-spacing);
-}
+
 
 .cs-widget-categories__item-title {
   color: black;
   font-size: 18px;
   font-weight: 700;
+}
+.cs-widget-categories__item-description p{
+  font-size: 14px;
+  font-weight: 400;
+  color:#435366;
 }
 
 
