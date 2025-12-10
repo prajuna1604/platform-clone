@@ -6,8 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Sportswear That Tells Us a Lot About Branding</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
-  <link rel="stylesheet" href="/assets/css/style.css">
-
+  <link rel="stylesheet" href="../assets/css/style.css">
   <link href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css" rel="stylesheet">
 
 
@@ -16,173 +15,248 @@
 <body>
 
   <!-- HEADER -->
-  <section class="header-container">
-    <header class="header">
-      <nav class="nav container" style="padding-right: 0px;">
-        <div class="nav__data">
-          <!-- Burger Toggle Button -->
-          <!-- Burger Menu Popup -->
+  <div class="container ">
+    <section class="header-container">
+      <!--=============== HEADER ===============-->
+      <header class="header">
+        <nav class="nav">
+          <div class="nav__data">
+            <!-- Burger Toggle Button -->
+            <!-- Burger Menu Popup -->
+            <div class="burger-overlay" id="burgerOverlay">
+              <div class="burger-container">
+                <!-- Left Navigation -->
+                <aside class="burger-left">
+                  <ul>
+                    <li class="active" data-menu="home">Demos <i class="ri-arrow-right-s-line"></i>
+                    </li>
+                    <li data-menu="features">Features<i class="ri-arrow-right-s-line"></i></li>
+                    <li data-menu="lifestyle">Lifestyle</li>
+                    <li data-menu="trends">Trends<span class="new-tag" style="border-radius:20px;">NEW</span></li>
+                    <li data-menu="business">Business</li>
+                    <li data-menu="technologies">Technologies</li>
+                  </ul>
+                </aside>
+                <!-- Middle Submenu -->
+                <div class="burger-middle">
+                  <h4>Homepage 1</h4>
+                  <ul>
+                    <li>Homepage 2</li>
+                    <li>Homepage 3</li>
+                    <li>Homepage 4</li>
+                    <li>Homepage 5</li>
+                  </ul>
+                </div>
+                <!-- Features Submenu -->
+                <!-- <div class="menu-content" data-menu="features">
+    <ul>
+      <li>Post Header</li>
+      <li>Layouts</li>
+      <li>Post Formats</li>
+      <li>Auto Load Next Post</li>
+      <li>Featured Category</li>
+    </ul>
+  </div> -->
 
 
-          <a href="#" class="nav__logo">
-            <span id="burgerToggle" class="burger-toggle cs-header__burger-toggle cs-header__burger-icon"
+                <!-- Right Popular Section -->
+                <div class="burger-right">
+                  <h5>Popular Now</h5>
+
+                  <div class="article">
+                    <img src="img/sportswear.webp" alt="">
+                    <div class="text">
+                      <h5>Sportswear That Tells Us a Lot About Branding</h5>
+                      <div class="meta"><i class="ri-chat-1-line"></i> 5
+                        Jun 5, 2025</div>
+                    </div>
+                  </div>
+
+                  <div class="article">
+                    <img src="img/category 3.webp" alt="">
+                    <div class="text">
+                      <h5>How Remote Work Enhances My Focus, Routine, and Output</h5>
+                      <div class="meta"><i class="ri-chat-1-line"></i> 5 Apr 6, 2025</div>
+                    </div>
+                  </div>
+
+                  <div class="article">
+                    <img src="img/trackspeed.webp" alt="">
+                    <div class="text">
+                      <h5>The Track Isn’t Just for Speed—It’s Where I Go to Hear My Thoughts</h5>
+                      <div class="meta"><i class="ri-chat-1-line"></i> 3 Mar 15, 2025</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <a href="#" class="nav__logo">
+              <span id="burgerToggle" class="burger-toggle cs-header__burger-toggle cs-header__burger-icon"
                 role="button" aria-label="Burger menu button">
                 <i></i>
                 <i></i>
               </span>
-            <img src="img/demo-logo-0001.webp" alt="Logo">
-          </a>
-          <!--=============== NAV MENU ===============-->
-          <div class="nav__menu" id="nav-menu">
-            <ul class="nav__list">
-              <li class="dropdown__item">
-                <div class="nav__link dropdown__button ">
-                  Demos <i class="ri-arrow-down-s-line dropdown__arrow">
 
-                  </i>
-                </div>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-link" href="#">Homepage 1</a></li>
-                  <li><a class="dropdown-link" href="#">Homepage 2</a></li>
-                  <li><a class="dropdown-link" href="#">Homepage 3</a></li>
-                  <li><a class="dropdown-link" href="#">Homepage 4</a></li>
-                  <li><a class="dropdown-link" href="#">Homepage 5</a></li>
-                </ul>
-              </li>
-              <!--=============== DROPDOWN 1 ===============-->
-              <li class="dropdown__item">
-                <div class="nav__link dropdown__button">
-                  Features <span class="badge text-bg-success">New</span><i
-                    class="ri-arrow-down-s-line dropdown__arrow"></i>
-                </div>
-
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-link" href="#">Post Headers<i class="ri-arrow-right-s-line"></i></a>
-                    <ul class="sub-menu">
-                      <li><a href="#">Standard</a></li>
-                      <li><a href="#">Featured</a></li>
-                      <li><a href="#">split</a></li>
-                      <li><a href="#">overlay</a></li>
-                    </ul>
-                  </li>
-
-                  <li><a class="dropdown-link" href="#">Layouts<i class="ri-arrow-right-s-line"></i></a>
-                    <ul class="sub-menu">
-                      <li><a href="#">Right sidebar</a></li>
-                      <li><a href="#">Left sidebar</a></li>
-                      <li><a href="#">No sidebar</a></li>
-                    </ul>
-                  </li>
-                  <li><a class="dropdown-link" href="#">Autoload next post</a></li>
-                  <li><a class="dropdown-link" href="#">Featured post category</a></li>
-                  <li><a class="dropdown-link" href="#">Author page</a></li>
-                  <li><a class="dropdown-link" href="#">Search page</a></li>
-                  <li><a class="dropdown-link" href="#">404 page</a></li>
-                </ul>
-              </li>
-              <!--=============== DROPDOWN 2 ===============-->
-              <li class="dropdown__item categories">
-                <div class="nav__link dropdown__button">
-                  Categories <i class="ri-arrow-down-s-line dropdown__arrow"></i>
-                </div>
-
-                <div class="dropdown__container">
-                  <div class="dropdown__grid">
-                    <div class="categories-container">
-                      <img src="img/category 1.webp" alt="Trends">
-                      <h3>Trends</h3>
-                      <p>Quick takes on style, gear, and daily shifts.</p>
-                    </div>
-
-                    <div class="categories-container">
-                      <img src="img/category 2.webp" alt="Lifestyle">
-                      <h3>Lifestyle</h3>
-                      <p>Small habits and ideas that shape everyday life.</p>
-                    </div>
-
-                    <div class="categories-container">
-                      <img src="img/category 3.webp" alt="Business">
-                      <h3>Business</h3>
-                      <p>Notes on work, growth, and personal direction.</p>
-                    </div>
-
-                    <div class="categories-container">
-                      <img src="img/category 4.webp" alt="Technology">
-                      <h3>Technology</h3>
-                      <p>Things I’m trying, testing, or thinking about lately.</p>
-                    </div>
+              <!-- <button id="burgerToggle" class="burger-toggle">
+                <i class="ri-menu-line"></i>
+              </button> -->
+              <img src="img/demo-logo-0001 (1).webp" width="108" height="22" alt="Logo">
+            </a>
+            <!--=============== NAV MENU ===============-->
+            <div class="nav__menu" id="nav-menu">
+              <ul class="nav__list">
+                <li class="dropdown__item">
+                  <div class="nav__link dropdown__button ">
+                    Demos <i class="ri-arrow-down-s-line dropdown__arrow">
+                    </i>
                   </div>
-                </div>
-              </li>
-              <!--=============== DROPDOWN 3 ===============-->
-              <li class="dropdown__item Lifestyle">
-                <div class="nav__link dropdown__button">
-                  Lifestyle <i class="ri-arrow-down-s-line dropdown__arrow"></i>
-                </div>
-                <div class="dropdown__container">
-                  <div class="card-group ">
-                    <div class="card">
-                      <img src="img/lifestyle-1.webp" class="card-img-top" alt="...">
-                      <div class="card-body">
-                        <h5 class="card-title">My Favorite Portable SSD Setup for Daily Smartphone Workflows</h5>
-                        <div class="post-meta">
-                          <span><i class="ri-chat-1-line"></i>3</span>
-                          <span>Jun 3, 2025</span>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-link" href="index.html">Homepage 1</a></li>
+                    <li><a class="dropdown-link" href="homepage-2">Homepage 2</a></li>
+                    <li><a class="dropdown-link" href="homepage-3">Homepage 3</a></li>
+                    <li><a class="dropdown-link" href="homepage-4">Homepage 4</a></li>
+                    <li><a class="dropdown-link" href="homepage-5">Homepage 5</a></li>
+                  </ul>
+                </li>
+                <!--=============== DROPDOWN 1 ===============-->
+                <li class="dropdown__item">
+                  <div class="nav__link dropdown__button">
+                    Features
+                    <span class="badge text-bg" style="border-radius:12px; background-color: #13b16f;">New</span>
+                    <i class="ri-arrow-down-s-line dropdown__arrow"></i>
+                  </div>
 
-                        </div>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-link" href="#">Post Headers<i class="ri-arrow-right-s-line"></i></a>
+                      <ul class="sub-menu">
+                        <li><a href="standard">Standard</a></li>
+                        <li><a href="featured">Featured</a></li>
+                        <li><a href="split">split</a></li>
+                        <li><a href="overlay">overlay</a></li>
+                      </ul>
+                    </li>
 
+                    <li><a class="dropdown-link" href="#">Layouts<i class="ri-arrow-right-s-line"></i></a>
+                      <ul class="sub-menu">
+                        <li><a href="rightsidebar">Right sidebar</a></li>
+                        <li><a href="leftsidebar">Left sidebar</a></li>
+                        <li><a href="nosidebar">No sidebar</a></li>
+                      </ul>
+                    </li>
+                    <li><a class="dropdown-link" href="#">Autoload next post</a></li>
+                    <li><a class="dropdown-link" href="#">Featured post category</a></li>
+                    <li><a class="dropdown-link" href="#">Author page</a></li>
+                    <li><a class="dropdown-link" href="#">Search page</a></li>
+                    <li><a class="dropdown-link" href="#">404 page</a></li>
+                  </ul>
+                </li>
+                <!--=============== DROPDOWN 2 ===============-->
+                <li class="dropdown__item categories">
+                  <div class="nav__link dropdown__button">
+                    Categories
+                    <i class="ri-arrow-down-s-line dropdown__arrow"></i>
+                  </div>
+
+                  <div class="dropdown__container">
+                    <div class="dropdown__grid">
+                      <div class="categories-container">
+                        <img src="img/category 1.webp" alt="Trends">
+                        <h3>Trends</h3>
+                        <p>Quick takes on style, gear, and daily shifts.</p>
                       </div>
-                    </div>
-                    <div class="card">
-                      <img src="img/lifestyle-2.webp" class="card-img-top" alt="...">
-                      <div class="card-body">
-                        <h5 class="card-title">What Footwear Teaches Us About Product Design and Branding</h5>
-                        <div class="post-meta">
-                          <span><i class="ri-chat-1-line"></i>3</span>
-                          <span>Jun 3, 2025</span>
 
-                        </div>
-
+                      <div class="categories-container">
+                        <img src="img/category 2.webp" alt="Lifestyle">
+                        <h3>Lifestyle</h3>
+                        <p>Small habits and ideas that shape everyday life.</p>
                       </div>
-                    </div>
-                    <div class="card">
-                      <img src="img/lifestyle-3.webp" class="card-img-top" alt="...">
-                      <div class="card-body">
-                        <h5 class="card-title">Contactless Payments Are On-the-Go Worldwide</h5>
-                        <div class="post-meta">
-                          <span><i class="ri-chat-1-line"></i>3</span>
-                          <span>Jun 3, 2025</span>
 
-                        </div>
-
+                      <div class="categories-container">
+                        <img src="img/category 3.webp" alt="Business">
+                        <h3>Business</h3>
+                        <p>Notes on work, growth, and personal direction.</p>
                       </div>
-                    </div>
-                    <div class="card">
-                      <img src="img/lifestyle-4.webp" class="card-img-top" alt="...">
-                      <div class="card-body">
-                        <h5 class="card-title">That Feeling of Being Airborne Is What Keeps Me Lacing Up Again</h5>
-                        <div class="post-meta">
-                          <span><i class="ri-chat-1-line"></i>3</span>
-                          <span>Jun 3, 2025</span>
 
-                        </div>
-
+                      <div class="categories-container">
+                        <img src="img/category 4.webp" alt="Technology">
+                        <h3>Technology</h3>
+                        <p>Things I’m trying, testing, or thinking about lately.</p>
                       </div>
                     </div>
                   </div>
-              </li>
-            </ul>
-          </div>
-          <!-- Search area (hidden by default) -->
-          <!-- <div class="cs-header__col cs-col__search">
+                </li>
+                <!--=============== DROPDOWN 3 ===============-->
+                <li class="dropdown__item Lifestyle">
+                  <div class="nav__link dropdown__button">
+                    Lifestyle <i class="ri-arrow-down-s-line dropdown__arrow"></i>
+                  </div>
+                  <div class="dropdown__container">
+                    <div class="card-group ">
+                      <div class="card">
+                        <img src="img/lifestyle-1.webp" class="card-img-top" alt="...">
+                        <span class="post-category Lifestyle">Lifestyle</span>
+                        <div class="card-body">
+                          <h5 class="card-title">My Favorite Portable SSD Setup for Daily Smartphone Workflows</h5>
+                          <div class="post-meta">
+                            <span><i class="ri-chat-1-line"></i>3</span>
+                            <span>Jun 3, 2025</span>
+
+                          </div>
+
+                        </div>
+                      </div>
+                      <div class="card">
+                        <img src="img/lifestyle-2.webp" class="card-img-top" alt="...">
+                        <span class="post-category Lifestyle">Lifestyle</span>
+                        <div class="card-body">
+                          <h5 class="card-title">What Footwear Teaches Us About Product Design and Branding</h5>
+                          <div class="post-meta">
+                            <span><i class="ri-chat-1-line"></i>3</span>
+                            <span>Jun 3, 2025</span>
+
+                          </div>
+
+                        </div>
+                      </div>
+                      <div class="card">
+                        <img src="img/lifestyle-3.webp" class="card-img-top" alt="...">
+                        <span class="post-category Lifestyle">Lifestyle</span>
+                        <div class="card-body">
+                          <h5 class="card-title">Contactless Payments Are On-the-Go Worldwide</h5>
+                          <div class="post-meta">
+                            <span><i class="ri-chat-1-line"></i>3</span>
+                            <span>Jun 3, 2025</span>
+
+                          </div>
+
+                        </div>
+                      </div>
+                      <div class="card">
+                        <img src="img/lifestyle-4.webp" class="card-img-top" alt="...">
+                        <span class="post-category Lifestyle">Lifestyle</span>
+                        <div class="card-body">
+                          <h5 class="card-title">That Feeling of Being Airborne Is What Keeps Me Lacing Up Again</h5>
+                          <div class="post-meta">
+                            <span><i class="ri-chat-1-line"></i>3</span>
+                            <span>Jun 3, 2025</span>
+
+                          </div>
+
+                        </div>
+                      </div>
+                    </div>
+                    <button type="button" class="btn btn-primary btn-sm lifestyle-btn">View All</button>
+                </li>
+
+              </ul>
+            </div>
+            <!-- Search area (hidden by default) -->
+            <!-- <div class="cs-header__col cs-col__search">
           <div class="cs-search__form-container">
-            <div class="cs-search__form-container">
               <form class="cs-search__form" action="#" method="get">
                 <div class="cs-form-group cs-search__form-group">
                   <input type="text" name="s" class="cs-search__input" placeholder="Search...">
-                  <i class="ri-search-line"></i>
                   <button class="cs-button cs-search__submit" aria-label="Search" type="submit"> Search </button>
-
                 </div>
               </form>
             </div>
@@ -233,34 +307,31 @@
                   </div>
                 </div>
               </div>
-
+            </div>
+        </div>  -->
+            <!-- Search Box & Dark Light & Right Button -->
+            <div class="darkLight-searchBox">
+              <div class="searchBox" id="searchToggle">
+                <i class="ri-search-line"></i>
+              </div>
+              <div class="dark-light">
+                <i class="ri-sun-line sun"></i>
+                <i class="ri-moon-line moon"></i>
+              </div>
+              <a class="right-btn" href="https://1.envato.market/platform">Buy Platform<i
+                  class="ri-arrow-right-s-line"></i>
+              </a>
             </div>
           </div>
-        </div> -->
-          <!-- Search Box & Dark Light & Right Button -->
-          <div class="darkLight-searchBox">
-            <div class="searchBox">
-              <i class="ri-search-line"></i>
-            </div>
-            <div class="dark-light">
-              <i class="ri-moon-line moon"></i>
-              <i class="ri-sun-line sun"></i>
-            </div>
-
-            <a class="right-btn" href="https://1.envato.market/platform">Buy Platform<i
-                class="ri-arrow-right-s-line"></i>
-            </a>
-          </div>
-        </div>
-      </nav>
-    </header>
-  </section>
-
+        </nav>
+      </header>
+    </section>
+  </div>
   <main class="post-page container">
     <div class="cs-sportwear-container">
       <div class="card-sport mb-3">
         <img src="img/sportswear-1.webp" class="card-img-top" alt="Sportswear">
-        <div class="card-body">
+        <div class="card-bodypostlink">
           <h5 class="card-title1">Sportswear That Tells Us a Lot About Branding</h5>
           <p class="card-text">A small personal moment that quietly stood out to me.</p>
         </div>
@@ -411,9 +482,9 @@
             elimination
             — it was about curation.
           </p>
-          <figure class="wp-block-image alignwide size-full">
-            <img decoding="async" src="img/post-link1 headphone.webp" class="wp-image-10">
-            <figcaption class="wp-element-caption">
+          <figure class="wp-block-image alignwide">
+            <img decoding="async" src="img/post-link1 headphone.webp" class="wp-image-10" style="margin-left:60px;">
+            <figcaption class="wp-element-caption" style="margin-left:60px;">
               Photo by
               <a href="https://platform.codesupply.co/platform/author/codesupplyco/">
                 Richard Howard</a>
@@ -443,10 +514,10 @@
             <figure class="alignleft size-full is-resized">
               <img decoding="async"
                 src="https://platform.codesupply.co/platform/wp-content/uploads/sites/2/2025/06/demo-avatar-0002.webp"
-                alt="" style="object-fit:cover;width:80px;height:80px">
+                alt="" style="object-fit:cover;width:80px;height:80px;margin-left:80px;">
             </figure>
             <p>“Discipline doesn’t mean restriction — it means giving your attention somewhere fully.”</p>
-            <cite>by
+            <cite style="margin-left:60px;">by
               <a href="https://platform.codesupply.co/platform/author/codesupplyco/">Matt Goulart</a>,
               business analyst</cite>
           </blockquote>
@@ -566,12 +637,12 @@
           </div>
         </div>
         <div class="d-grid gap-2">
-          <button class="btn btn-primary" style="border-radius:10px; width:90%;" type="button">View comments(5)</button>
+          <button class="btn btn-primary" style="border-radius:10px; width:90%;background-color:#0a2540" type="button">View comments(5)</button>
         </div>
       </div>
       <aside id="secondary" class="cs-widget-area cs-sidebar__area">
         <div class="cs-sidebar__inner">
-           <h2>Featured</h2>
+          <h2>Featured</h2>
           <div id="carouselExampleRight" class="carousel slide-right" data-bs-ride="carousel w-100 ">
             <div class="carousel-inner">
               <div class="carousel-item carousel-item-right active">
@@ -610,7 +681,7 @@
             </button>
           </div>
           <h2>Trending posts</h2>
-          <div class="card " style="width: 25rem;">
+          <div class="card " >
             <img width="528" height="297" src="img/cycling-0018-320x180.webp" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">What Competitive Cycling Gave Me
@@ -628,13 +699,13 @@
   </main>
   <h2 class="fw-medium" style="font-size: 20px; color: #435366; padding-left:20px;">
     You may be interested
-  </h2>
+ 
   <div class="row row-cols-1 row-cols-md-3 g-3 ">
     <div class="col">
-      <div class="card-footer">
-        <img src="img/Desert.webp" class="card-img-top rounded-2" alt="...">
+      <div class="card card-footer">
+        <img src="img/Desert.webp" class="card-img-top img-fluid rounded-2" alt="...">
         <div class="card-body">
-          <h5 class="card-title color:#0a2540 fw-medium">The Night I Slept in the Desert and Heard Absolute Silence</h5>
+          <h5 class="card-title" style="color:#0a2540 fw-medium">The Night I Slept in the Desert and Heard Absolute Silence</h5>
           <div class="post-meta">
             <span><i class="ri-chat-1-line"></i> 5</span>
             <span>Jun 5, 2025</span>
@@ -644,10 +715,10 @@
       </div>
     </div>
     <div class="col">
-      <div class="card-footer">
-        <img src="img/cyclingshoes.webp" class="card-img-top" alt="...">
+      <div class="card card-footer">
+        <img src="img/cyclingshoes.webp" class="card-img-top img-fluid rounded-2" alt="...">
         <div class="card-body">
-          <h5 class="card-title  color:#0a2540 fw-medium">Designed for Speed, Not Show: What I Like About My Cycling
+          <h5 class="card-title" style="color:#0a2540 fw-medium">Designed for Speed, Not Show: What I Like About My Cycling
             Shoes</h5>
           <div class="post-meta">
             <span><i class="ri-chat-1-line"></i> 5</span>
@@ -659,10 +730,10 @@
       </div>
     </div>
     <div class="col">
-      <div class="card-footer">
-        <img src="img/swimming.webp" class="card-img-top" alt="...">
+      <div class="card card-footer">
+        <img src="img/swimming.webp" class="card-img-top img-fluid rounded-2" alt="...">
         <div class="card-body">
-          <h5 class="card-title  color:#0a2540 fw-medium">Swimming Felt Off at First—Then It Turned Into a Daily Reset
+          <h5 class="card-title" style="color:#0a2540 fw-medium">Swimming Felt Off at First—Then It Turned Into a Daily Reset
           </h5>
           <div class="post-meta">
             <span><i class="ri-chat-1-line"></i> 5</span>
@@ -674,6 +745,7 @@
     </div>
 
   </div>
+   </h2>
   <!-- FOOTER -->
   <section class="footer-main ">
     <footer class="cs-footer">

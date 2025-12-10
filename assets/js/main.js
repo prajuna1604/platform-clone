@@ -1,104 +1,110 @@
-// document.addEventListener('DOMContentLoaded', () => {
-// // Wait for DOM
-// const body=document.querySelector('body');
-// const nav=document.querySelector('nav');
-// const modeToggle=document.querySelector('.dark-light');
-// const searchToggle=document.querySelector('.searchBox');
-// modeToggle.addEventListener('click',()=>{
-//   modeToggle.classList.toggle('active');
-// });
-// });
 document.addEventListener('DOMContentLoaded', () => {
+
   const body = document.querySelector('body');
 
+  // ---------- DARK MODE ----------
   const modeToggle = document.querySelector('.dark-light');
 
   if (modeToggle) {
     modeToggle.addEventListener('click', () => {
       modeToggle.classList.toggle('active');
       body.classList.toggle('dark-mode');
-
     });
   }
 
+  // ---------- BURGER MENU ----------
   const burger = document.getElementById("burgerToggle");
-  burger.addEventListener("click", () => {
-    burger.classList.toggle("active");
-  });
-  const burgerToggle = document.getElementById("burgerToggle");
   const burgerOverlay = document.getElementById("burgerOverlay");
-  burgerToggle.addEventListener("click", () => {
-    burgerOverlay.classList.toggle("active");
-  });
-  
-  // Optional: close when clicking outside or pressing ESC
-  document.addEventListener("keydown", (e) => {
-    if (e.key === "Escape") burgerOverlay.classList.remove("active");
-  });
-  const demosMenu = document.querySelector(".demos-menu");
-  const featuresMenu = document.querySelector(".features-menu");
 
+  if (burger && burgerOverlay) {
+    burger.addEventListener("click", () => {
+      burger.classList.toggle("active");
+      burgerOverlay.classList.toggle("active");
+    });
 
+    document.addEventListener("keydown", (e) => {
+      if (e.key === "Escape") burgerOverlay.classList.remove("active");
+    });
+  }
+
+  // ---------- SEARCH ----------
   const searchBox = document.querySelector(".searchBox");
   const searchContainer = document.querySelector(".cs-col-search");
   const closeBtn = document.querySelector(".cs-search-close");
 
-  searchBox.addEventListener("click", () => {
-    searchContainer.classList.add("active");
-  });
+  if (searchBox && searchContainer && closeBtn) {
 
-  closeBtn.addEventListener("click", () => {
-    searchContainer.classList.remove("active");
-  });
+    searchBox.addEventListener("click", () => {
+      searchContainer.classList.add("active");
+    });
 
-  document.addEventListener("click", (e) => {
-    if (!searchContainer.contains(e.target) && !searchBox.contains(e.target)) {
+    closeBtn.addEventListener("click", () => {
       searchContainer.classList.remove("active");
-    }
-  });
+    });
+
+    document.addEventListener("click", (e) => {
+      if (!searchContainer.contains(e.target) && !searchBox.contains(e.target)) {
+        searchContainer.classList.remove("active");
+      }
+    });
+  }
+
+  // ---------- SWIPER ----------
+ if (document.querySelector('.thumb-slider')) {
   const swiper = new Swiper('.thumb-slider', {
-  direction: 'vertical',
-  slidesPerView: 3,
-  spaceBetween: 12,
-  watchSlidesProgress: true,
-});
+    direction: 'vertical',
+    slidesPerView: 3,
+    spaceBetween: 12,
+    watchSlidesProgress: true,
+  });
 
-/* Sync Swiper with Carousel */
-let carousel = document.getElementById("mainCarousel");
-carousel.addEventListener("slid.bs.carousel", function (e) {
-  swiper.slideTo(e.to);
-});
+  const carousel = document.getElementById("mainCarousel");
 
-swiper.on("click", function () {
-  bootstrap.Carousel.getInstance(carousel).to(swiper.clickedIndex);
-});
-document.addEventListener("DOMContentLoaded", function () {
+  if (carousel) {
+    carousel.addEventListener("slid.bs.carousel", function (e) {
+      swiper.slideTo(e.to);
+    });
 
+    swiper.on("click", function () {
+      bootstrap.Carousel.getInstance(carousel).to(swiper.clickedIndex);
+    });
+  }
+}
+
+
+  // ---------- LOAD MORE ----------
   const loadMoreBtn = document.getElementById("loadMoreBtn");
   const posts = document.querySelectorAll(".post-list a");
-  let visible = 8;
 
-  loadMoreBtn.addEventListener("click", function () {
+  let visible = 12; // first show 12
 
-    let count = 0;
-
-    for (let i = visible; i < posts.length; i++) {
-      if (count < 4) {
-        posts[i].style.display = "block";
-        count++;
-      }
+  // Hide posts initially
+  posts.forEach((post, index) => {
+    if (index >= visible) {
+      post.style.display = "none";
     }
-
-    visible += 4;
-
-    // Hide button if no more posts
-    if (visible >= posts.length) {
-      loadMoreBtn.style.display = "none";
-    }
-
   });
+
+  if (loadMoreBtn && posts.length > visible) {
+
+    loadMoreBtn.addEventListener("click", () => {
+
+      let shown = 0;
+
+      for (let i = visible; i < posts.length && shown < 3; i++) {
+        posts[i].style.display = "block";
+        shown++;
+      }
+
+      visible += 3;
+
+      if (visible >= posts.length) {
+        loadMoreBtn.style.display = "none";
+      }
+    });
+
+  } else {
+    if (loadMoreBtn) loadMoreBtn.style.display = "none";
+  }
+
 });
-
-
-});
-
