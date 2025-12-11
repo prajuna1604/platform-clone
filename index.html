@@ -332,11 +332,11 @@
     </section>
     <!-- banner -->
     <div class="container-banner">
-      <div id="carouselExample" class="carousel slide" data-bs-ride="carousel" tabindex="0">
+      <div id="carouselMain" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
           <!-- Slide 1 -->
           <div class="carousel-item active " data-bs-interval="10000">
-            <img src="img/banner1.webp" class="d-block w-100 " alt="...">
+            <img src="img/banner1.webp" class="d-block w-100 " alt="Slide 1">
               <span class="post-category trends carousel-badge">Trends</span>
             <div class="carousel-caption d-none d-md-block">
               <h5>Why Voice-Controlled Devices Are Changing the Way We Live and Work</h5>
@@ -353,7 +353,7 @@
           </div>
           <!-- Slide 2 -->
           <div class="carousel-item" data-bs-interval="10000">
-            <img src="img/banner2.webp" class="d-block w-100 " alt="...">
+            <img src="img/banner2.webp" class="d-block w-100 " alt="Slide 2">
              <span class="post-category technologies carousel-badge">Technologies</span>
             <div class="carousel-caption d-none d-md-block">
               <h5>How My Training Routine Changed After I Took Cycling Seriously</h5>
@@ -368,7 +368,7 @@
           </div>
           <!-- Slide 3 -->
           <div class="carousel-item" data-bs-interval="10000">
-            <img src="img/banner-3.webp" class="d-block w-100 " alt="...">
+            <img src="img/banner-3.webp" class="d-block w-100 " alt="Slide 3">
              <span class="post-category lifestyle carousel-badge">Lifestyle</span>
             <div class="carousel-caption d-none d-md-block">
               <h5>That Feeling of Being Airborne Is What Keeps Me Lacing Up Again</h5>
@@ -385,23 +385,23 @@
         </div>
         <div class="swiper thumb-slider">
           <div class="swiper-wrapper">
-            <div class="swiper-slide"><img src="img/banner1.webp"></div>
-            <div class="swiper-slide"><img src="img/banner2.webp"></div>
-            <div class="swiper-slide"><img src="img/banner-3.webp"></div>
+            <div class="swiper-slide" data-bs-target="#mainCarousel" data-bs-slide-to="0"><img src="img/banner1.webp"></div>
+            <div class="swiper-slide" data-bs-target="#mainCarousel" data-bs-slide-to="1"><img src="img/banner2.webp"></div>
+            <div class="swiper-slide"data-bs-target="#mainCarousel" data-bs-slide-to="2"><img src="img/banner-3.webp"></div>
           </div>
         </div>
-
+      </div>
        <!-- Controls -->
-      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselMain" data-bs-slide="prev">
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Previous</span>
       </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselMain" data-bs-slide="next">
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Next</span>
       </button>
-      </div>
     </div>
+    
   </div>
   <!-- body -->
   <section class="main-container">
@@ -839,7 +839,7 @@
 </div>
       <div class="featured">
      <h2 class="feature">Featured</h2>
-      <div id="carouselExampleRight" class="carousel.slide-right" data-bs-ride="carousel w-100">
+      <div id="carouselExampleRight" class="carousel slide carousel-right" data-bs-ride="carousel w-100">
         <div class="carousel-inner">
           <div class="carousel-item carousel-item-right active">
             <img width="820" height="462"
@@ -847,31 +847,49 @@
               alt="">
             <div class="carousel-caption-right">
               <h5>What a Pair of Old Sneakers Taught Me About Personal Taste</h5>
-              <p>Apr 2, 2025 • 5 min read</p>
+              <div class="post-meta">
+            <span><i class="ri-chat-1-line"></i> 5</span>
+            <span>Jun 5, 2025</span>
+            <span><i class="ri-timer-line"></i>5 min read</span>
+          </div>
             </div>
           </div>
 
           <div class="carousel-item carousel-item-right">
             <img src="img/feature banner 2.webp" class="d-block w-100 carousel-img-right" alt="Feature 2">
             <div class="carousel-caption-right">
-              <h5>Next Generation Audio Equipment</h5>
-              <p>Apr 4, 2025 • 4 min read</p>
+              <h5>The Rise of Minimalist Interfaces in Personal Audio Equipment</h5>
+             <div class="post-meta">
+            <span><i class="ri-chat-1-line"></i> 5</span>
+            <span>Jun 5, 2025</span>
+            <span><i class="ri-timer-line"></i>5 min read</span>
+          </div>
             </div>
           </div>
 
           <div class="carousel-item carousel-item-right">
-            <img src="img/feature banner 3.webp" class="d-block w-100 carousel-img-right" alt="Feature 3">
+            <img src="img/feature banner.webp" class="d-block w-100 carousel-img-right" alt="Feature 3">
             <div class="carousel-caption-right">
-              <h5>Modern Audio Gear Design</h5>
-              <p>Apr 5, 2025 • 4 min read</p>
+              <h5>Exploring Mood, Identity, and Light in Personal Tech Photography</h5>
+              <div class="post-meta">
+            <span><i class="ri-chat-1-line"></i> 5</span>
+            <span>Jun 5, 2025</span>
+            <span><i class="ri-timer-line"></i>5 min read</span>
+          </div>
             </div>
+            
+          </div>
+           <div class="swiper thumb-slider">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide active" style="height:auto"; ><img src="img/feature banner 3.webp"></div>
+            <div class="swiper-slide" style="height:auto";><img src="img/feature banner 2.webp"></div>
+            <div class="swiper-slide" style="height:auto";><img src="img/feature banner.webp"></div>
           </div>
         </div>
-
+        </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleRight" data-bs-slide="prev">
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
         </button>
-
         <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleRight" data-bs-slide="next">
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
         </button>
